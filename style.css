@@ -1,0 +1,219 @@
+.welcome-screen {
+    background-color: #f0f8f0; /* Fundo mais claro para a capa */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    animation: fadeIn 1s ease-out; /* Reutiliza a animação de entrada */
+}
+
+.welcome-screen h1 {
+    color: #4CAF50; /* Verde mais forte para o título da capa */
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.welcome-screen p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#start-quiz-button {
+    background-color: #2e8b57; /* Verde floresta para o botão de iniciar */
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#start-quiz-button:hover {
+    background-color: #216e41; /* Verde mais escuro no hover */
+    transform: translateY(-3px);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;.welcome-screen {
+        background-color: #f0f8f0; /* Fundo mais claro para a capa */
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        width: 90%;
+        max-width: 700px;
+        text-align: center;
+        animation: fadeIn 1s ease-out; /* Reutiliza a animação de entrada */
+    }
+    
+    .welcome-screen h1 {
+        color: #4CAF50; /* Verde mais forte para o título da capa */
+        font-size: 2.8em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .welcome-screen p {
+        font-size: 1.3em;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 30px;
+    }
+    
+    #start-quiz-button {
+        background-color: #2e8b57; /* Verde floresta para o botão de iniciar */
+        color: white;
+        padding: 15px 35px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    #start-quiz-button:hover {
+        background-color: #216e41; /* Verde mais escuro no hover */
+        transform: translateY(-3px);
+    }
+    
+    background: linear-gradient(to right, #a2d2a2, #f0f8f0); /* Transição do verde do campo para o branco da cidade */
+    color: #333;
+    text-align: center;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    color: #2e8b57; /* Verde vibrante */
+    margin-bottom: 25px;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#question {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.options-container button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    background-color: #6a9e6a; /* Tom de verde suave */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.options-container button:hover {
+    background-color: #4CAF50; /* Verde mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+.options-container button.selected {
+    background-color: #ffc107; /* Amarelo quando selecionado */
+    border: 2px solid #e0a800;
+    color: #333;
+}
+
+.options-container button.correct {
+    background-color: #28a745; /* Verde para resposta correta */
+    color: white;
+    border: 2px solid #218838;
+}
+
+.options-container button.incorrect {
+    background-color: #dc3545; /* Vermelho para resposta incorreta */
+    color: white;
+    border: 2px solid #c82333;
+}
+
+#next-button {
+    background-color: #007bff; /* Azul para o botão de próxima */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#next-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.result-container {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
+
+.result-container h2 {
+    color: #2e8b57;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#score-text {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #555;
+}
+
+#message-text {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+#restart-button {
+    background-color: #6c757d; /* Cinza para o botão de reiniciar */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#restart-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}

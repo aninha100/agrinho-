@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Conexão Campo-Cidade 🌽🏘️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-screen" id="welcome-screen">
+        <h1>🌱 Olá, Futuro Conectado! 🏙️</h1>
+        <p>Prepare-se para testar seus conhecimentos e celebrar a incrível conexão entre o Campo e a Cidade de Londrina e do Paraná!</p>
+        <p>Você sabe de onde vem o que comemos? E a importância de quem produz?</p>
+        <button id="start-quiz-button">🎉 Vamos Começar! 🎉</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container" style="display: none;">
+        <h1>🌳 Quiz: Conexão Campo-Cidade 🏙️</h1>
+        <div id="quiz">
+            <h2 id="question">Carregando pergunta...</h2>
+            <div id="options" class="options-container">
+                </div>
+            <button id="next-button">Próxima Pergunta</button>
+        </div>
+        <div id="result" class="result-container" style="display: none;">
+            <h2>🎉 Fim do Quiz! 🎉</h2>
+            <p id="score-text">Sua pontuação: 0 de 0</p>
+            <p id="message-text"></p>
+            <button id="restart-button">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
